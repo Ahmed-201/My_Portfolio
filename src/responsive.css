@@ -1,0 +1,241 @@
+@media only screen and (max-width: 375px) {
+  /* CSS rules go here */
+
+  /* .linking {
+
+        width: 100%;
+    } */
+  .header-inner {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: end;
+  }
+
+  .linking {
+
+    display: none !important;
+  }
+
+  .logo {
+
+    width: 350px;
+  }
+
+  .logo h3 {
+
+    font-size: 20px;
+  }
+
+  .hamBurger {
+
+    display: block;
+  }
+
+
+  .linking {
+
+    /* display: none; */
+    visibility: hidden;
+  }
+  .hero_container {
+    margin-top: 109px;
+}
+
+  .title_hero {
+    width: 300px !important;
+  }
+
+  .currently_working div{
+
+    text-align: center;
+  }
+  .year {
+
+    padding-left: 10px;
+  }
+  .year p{
+
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+ 
+  .span_check{
+    font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
+    font-size: 52px !important;
+
+    /* font-style: normal;
+    font-weight: 600; */
+
+     letter-spacing: -0.04em !important;
+    line-height: 39px !important;
+    text-align: center; 
+
+  }
+  .responsive_check{
+
+    width: 84% !important;
+  }
+
+  .holds_both{
+
+    gap: 290px;
+    flex-direction: column !important;
+    gap: 3px;
+    align-items: center;
+    line-height: 17px;
+  }
+  .currently_working {
+
+    justify-content: center !important;
+  }
+  .currently_working p{
+
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .image_holder {
+width: 300px;
+  }
+  .image_holder img{
+
+    width: 100% !important;
+    height: 400px !important;
+      }
+
+      .my_tried_heading h2{
+
+        font-size: 36px;
+        line-height: 35px;
+        font-weight: 600;
+        letter-spacing: -.02em;
+        padding: 0px 4px;
+      }
+      .my_tried_heading {
+        width: 362px;
+        padding-top: 100px;
+        padding-bottom: 60px;
+      }
+      .header {
+
+        position: sticky !important; /* Make the header sticky */
+    top: 0px !important; /* Stick to the top of the viewport */
+    z-index: 1000 !important; /* Ensure it stays on top of other elements */
+       
+      }
+
+      .aims_benefit_main_text {
+        width: 1000px;
+        padding-top: 70px;
+        padding-bottom: 0px;
+    }
+
+      .aims_benefit_main h2{
+
+        font-size: 36px;
+        line-height: 35px;
+        font-weight: 600;
+        letter-spacing: -.02em;
+        padding: 0px 4px;
+      }
+
+      .my_tried_procedure h2{
+
+        font-size: 36px;
+      }
+      .my_tried_procedure p{
+
+        font-size: 20px;
+      }
+      .experience_heading h1{
+
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: -.04em;
+        line-height: 31px;
+      }
+
+      .experince_main {
+        gap: 50px;
+    }
+
+      .my_tried_procedure{
+
+        padding-bottom: 100px;
+      }
+      .experince_main{
+
+        align-items: flex-start !important;
+
+      }
+      .experinces_main{
+
+        gap: 0px !important;
+      }
+      /* .experince {
+
+        padding: 20px;
+      } */
+      .company h2{
+        font-size: 20px;
+
+      }
+      .time_period h4{
+        font-size: 16px;
+      } 
+      .designation{
+
+        width: 300px;
+      }
+      .experince {
+
+        margin-left: 10px;
+      }
+      .work_resume_btn button{
+        width: 134px;
+        height: 46px;
+        font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    
+      
+      }
+      .work_resume_btn_parent{
+        margin-top: 20px;
+
+
+      }
+      .sub_footer{
+
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+      }
+      .caption h4{
+        max-width: 304px;
+        letter-spacing: -.02em;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .projects_social{
+
+        flex-direction: column;
+      }
+
+      .busy_in{
+
+        max-width: 280px;
+      }
+      .avatar_img img{
+
+        width: 270px;
+      }
+      
+}
+

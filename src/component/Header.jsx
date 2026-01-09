@@ -1,0 +1,81 @@
+import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+
+function Header() {
+  const [isTablet, setIsTablet] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsTablet(window.innerWidth <= 768);
+      if (window.innerWidth > 768) setOpen(false);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <>
+      {/* HEADER BAR */}
+      <div className=" relative  bg-dark py-3">
+        <div className="container d-flex align-items-center justify-content-between text-light">
+          {/* LOGO */}
+          <h3 className="m-0 fs-5 fw-semibold">MUHAMMAD AHMED</h3>
+
+          {/* DESKTOP LINKING (REMOVED ON TABLET) */}
+          {!isTablet && (
+            <div className="d-flex align-items-center justify-content-between flex-grow-1 ms-5">
+              {/* ABOUT / WORK */}
+              <div className="d-flex gap-4">
+                <h5 className="m-0 fs-6 ">ABOUT</h5>
+                <h5 className="m-0 fs-6">WORK</h5>
+              </div>
+
+              {/* CONNECT */}
+              <div className="d-flex align-items-center gap-3">
+                <h5 className="m-0 fs-6">LETS CONNECT</h5>
+                <button className="btn btn-light rounded-pill px-4 fw-bold">
+                  abbasiahmed201@gmail.com
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* HAMBURGER (TABLET & MOBILE) */}
+          {isTablet && (
+            <button
+              className="btn btn-outline-light"
+              onClick={() => setOpen(!open)}
+            >
+              <FontAwesomeIcon icon={faBars} />
+            </button>
+          )}
+        </div>
+
+        {/* MOBILE / TABLET MENU */}
+        {isTablet && open && (
+          <div className="absolute absolute top-full w-full bg-[black] text-light py-4 z-50 h-[75vh]">
+            <div className="container d-flex flex-col gap-3 text-center w-50">
+              <div className="border-b pb-3">
+                <h1>ABOUT</h1>
+                <h1>WORK</h1>
+              </div>
+
+              <p className="fw-bold mb-0">LET'S CONNECT</p>
+              <button className="btn btn-light rounded-pill px-4 fw-bold w-full">
+                abbasiahmed201@gmail.com
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    </>
+  );
+}
+
+export default Header;

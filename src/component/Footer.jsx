@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import avatar from "../assets/images/avatar_image.png"
 
+
 // import { fa-square-facebook} from '@fortawesome/free-brands-svg-icons';
 
 
@@ -36,7 +37,7 @@ function Footer() {
                         </div>
 
                         <div className="email_btn">
-                            <button type="button" class="btn btn-light rounded-pill">abbasiahmed201@gmail.com</button>
+                            <button type="button" class="btn btn-light rounded-pill fw-bold bg-light ">abbasiahmed201@gmail.com</button>
                         </div>
                     </div>
                     <div className='projects_social gap-5'>

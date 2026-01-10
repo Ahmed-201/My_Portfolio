@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div className="bg_dark  overflow-x-hidden">
+      <div className="bg_dark overflow-x-hidden">
         <Header />
         <Banner />
         <AimsBenefitsText

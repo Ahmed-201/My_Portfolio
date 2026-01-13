@@ -47,14 +47,15 @@ function AimsBenefitsText({ text , animation }) {
          </div>
             :
             <div className="
+   
+  ">
+              <h2  className='className="
     font-intertight font-semibold text-[32px] leading-[38px] 
     sm:text-[40px] sm:leading-[45px] 
     md:text-[52px] md:leading-[58px] 
     lg:text-[64px] lg:leading-[65px] 
-    tracking-[-0.02em] text-center
-    mt-[100px]
-  ">
-              <h2>{text}</h2>
+    tracking-[-0.02em] text-center  mt-[100px]
+  "' >{text}</h2>
             </div>
         }
       </div>

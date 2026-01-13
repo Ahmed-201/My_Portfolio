@@ -70,21 +70,21 @@
   padding-bottom: 70px;
 }
 
-.my_tried_heading {
-  /* width: 501px; */
+/* .my_tried_heading {
+
    padding-top: 150px; 
    padding-bottom: 120px; 
-}
+} */
 
-.my_tried_heading h2 {
+/* .my_tried_heading h2 {
   font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 600;
-  /* margin-top: 100px; */
+
   letter-spacing: -0.02em;
   line-height: 73px;
-}
+} */
 
 /* .my_tried_procedure {
   padding-bottom: 224px;
@@ -183,12 +183,12 @@
   font-size: 1.5rem;
 }
 
-.sub_footer {
+/* .sub_footer {
   gap: 160px;
   display: flex;
   justify-content: center;
   flex-direction: row;
-}
+} */
 .projects_social {
   display: flex;
   flex-direction: row;
@@ -219,9 +219,9 @@
   font-weight: 600;
   color: rgb(153, 153, 153);
 }
-.avatar_img img {
+/* .avatar_img img {
   width: -webkit-fill-available;
-}
+} */
 /* .bg_dark{
 
   background-color: green !important;
@@ -229,11 +229,11 @@
 .main_footer {
   background-color: black !important;
 }
-.caption h4 {
+/* .caption h4 {
   font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
   font-weight: 600;
   color: white;
-}
+} */
 .name h2 {
   font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
   font-weight: 600;

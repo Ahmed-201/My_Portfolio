@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isTablet, setIsTablet] = useState(false);
@@ -10,7 +11,7 @@ function Header() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsTablet(window.innerWidth <= 768);
+      setIsTablet(window.innerWidth <= 1024);
       if (window.innerWidth > 768) setOpen(false);
     };
 
@@ -25,7 +26,7 @@ function Header() {
       <div className=" relative  bg-dark py-3">
         <div className="container d-flex align-items-center justify-content-between text-light">
           {/* LOGO */}
-          <h3 className="m-0 fs-5 fw-semibold">MUHAMMAD AHMED</h3>
+         <Link to="/" className=" text-white no-underline"> <h3 className="m-0 fs-5 fw-semibold">MUHAMMAD AHMED</h3></Link>
 
           {/* DESKTOP LINKING (REMOVED ON TABLET) */}
           {!isTablet && (
@@ -33,7 +34,7 @@ function Header() {
               {/* ABOUT / WORK */}
               <div className="d-flex gap-4">
                 <h5 className="m-0 fs-6 ">ABOUT</h5>
-                <h5 className="m-0 fs-6">WORK</h5>
+                <h5 className="m-0 fs-6"><Link to="/about" className="hover:underline text-white">WORK</Link></h5>
               </div>
 
               {/* CONNECT */}
@@ -60,16 +61,34 @@ function Header() {
         {/* MOBILE / TABLET MENU */}
         {isTablet && open && (
           <div className="absolute absolute top-full w-full bg-[black] text-light py-4 z-50 h-[75vh]">
-            <div className="container d-flex flex-col gap-3 text-center w-50">
-              <div className="border-b pb-3">
-                <h1>ABOUT</h1>
-                <h1>WORK</h1>
+            <div className="container d-flex flex-col gap-3 text-center w-50 pt-[100px]">
+              <div className="border-b pb-3 flex flex-col items-center">
+                <h1 className="text-7xl fw-bold ">ABOUT</h1>
+                <h1 className="text-7xl fw-bold"><Link to="/about" className="hover:underline text-white no-underline">WORK</Link></h1>
               </div>
 
               <p className="fw-bold mb-0">LET'S CONNECT</p>
-              <button className="btn btn-light rounded-pill px-4 fw-bold w-full">
-                abbasiahmed201@gmail.com
-              </button>
+            <button
+  type="button"
+  className="
+    w-full
+    max-w-md
+    px-4 md:px-6 lg:px-8
+    py-2 md:py-3
+    bg-white
+    text-black
+    font-bold
+    rounded-full
+    text-sm md:text-base lg:text-lg
+    truncate
+    text-center
+    transition-all
+    hover:bg-gray-200
+  "
+>
+  abbasiahmed201@gmail.com
+</button>
+
             </div>
           </div>
         )}

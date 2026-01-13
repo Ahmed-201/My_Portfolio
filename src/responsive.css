@@ -144,10 +144,9 @@ width: 300px;
         padding: 0px 4px;
       }
 
-      .my_tried_procedure h2{
-
+      /* .my_tried_procedure h2{
         font-size: 36px;
-      }
+      } */
       .my_tried_procedure p{
 
         font-size: 20px;
@@ -223,10 +222,7 @@ width: 300px;
         font-weight: 600;
         font-size: 20px;
       }
-      .projects_social{
-
-        flex-direction: column;
-      }
+   
 
       .busy_in{
 
@@ -238,4 +234,53 @@ width: 300px;
       }
       
 }
+
+
+/* Responsive styles for medium screens (769px - 1023px) */
+@media (min-width: 769px) and (max-width: 1023px) {
+  
+  /* Avatar wrapper */
+  .avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem; /* Adjust spacing */
+    width:100%;
+  }
+
+  /* Name + Bio */
+  .avatar .name {
+    text-align: left;
+    max-width: 50%;
+  }
+
+  /* Avatar Image */
+  .avatar .avatar_img img {
+    width: 14rem;  /* Smaller than large screen */
+    height: 14rem;
+    /* border-radius: 50%; */
+    object-fit: cover;
+  }
+
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+
+    .avatar {
+    display: flex;
+    flex-direction: column;
+   
+    align-self: center;
+    /* gap: 1.5rem;
+    width:100%; */
+  }
+
+     .projects_social{
+
+        flex-direction: column;
+      }
+
+}
+
 

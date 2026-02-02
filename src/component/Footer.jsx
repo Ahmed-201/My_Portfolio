@@ -11,9 +11,9 @@ function Footer() {
     <div className="container-fluid main_footer">
       <div className="container flex justify-center flex-col-reverse lg:flex-row gap-[120px]  ">
         <div className="avatar">
-          <div className="name">
-            <h2>MUHAMMAD AHMED</h2>
-            <p className="busy_in">
+          <div className="name ">
+            <h2 className="text-center md:text-left" >MUHAMMAD AHMED</h2>
+            <p className="busy_in text-center md:text-left">
               Junior Frontend Developer, currently building engaging user
               interfaces at universal motors ltd.
             </p>

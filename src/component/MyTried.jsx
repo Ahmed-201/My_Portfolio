@@ -8,7 +8,7 @@ function MyTried() {
                text-2xl md:text-4xl lg:text-6xl
                leading-snug md:leading-normal lg:leading-[73px]'>
 
-                <h2 className=''>My Proven Web Development Process</h2>
+                <h2 className='text-2xl md:text-4xl lg:text-5xl'>My Proven Web Development Process</h2>
             </div>
 
             <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8 px-4">
@@ -16,7 +16,7 @@ function MyTried() {
               
                     <div className="">
                         <p>(01)</p>
-                        <h2 className='text-sm md:text-4xl lg:text-6xl' >Discovery</h2>
+                        <h2 className='text-md md:text-4xl lg:text-6xl' >Discovery</h2>
                         <p className='text-[#929292] text-sm md:text-lg lg:text4xl fw-bold' >I start by understanding your business goals, target users, and technical requirements to ensure the right solution from day one.</p>
                     </div>
                     <div className="">

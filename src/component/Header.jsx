@@ -4,11 +4,13 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
+import { gsap } from "gsap";
 
 function Header() {
   const [isTablet, setIsTablet] = useState(false);
   const [open, setOpen] = useState(false);
-
+const menuRef = useRef(null);
   useEffect(() => {
     const handleResize = () => {
       setIsTablet(window.innerWidth <= 1024);
@@ -19,7 +21,24 @@ function Header() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
+  
+useEffect(() => {
+  if (open) {
+    gsap.fromTo(
+      menuRef.current,
+      {
+        y: -30,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.6,
+        ease: "power3.out",
+      }
+    );
+  }
+}, [open]);
   return (
     <>
       {/* HEADER BAR */}
@@ -60,7 +79,9 @@ function Header() {
 
         {/* MOBILE / TABLET MENU */}
         {isTablet && open && (
-          <div className="absolute absolute top-full w-full bg-[black] text-light py-4 z-50 h-[75vh]">
+          <div className="absolute absolute top-full w-full bg-[black] text-light py-4 z-50 h-[75vh] "
+           ref={menuRef}
+          >
             <div className="container d-flex flex-col gap-3 text-center w-50 pt-[100px]">
               <div className="border-b pb-3 flex flex-col items-center">
                 <h1 className="text-7xl fw-bold ">ABOUT</h1>

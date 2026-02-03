@@ -6,9 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger plug
 function Banner() {
   const containerRef = useRef();
   const imageRef = useRef(); // image wrapper
-
-  const headingRef = useRef();
-
+  
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(
@@ -57,12 +55,6 @@ function Banner() {
         },
       });
 
-      gsap.from(headingRef.current, {
-        y: 100, // start 100px neeche
-        opacity: 0, // start invisible
-        duration: 1.5,
-        ease: "power3.out", // fast at start, slow at end
-      });
     },
     { scope: containerRef }
   );

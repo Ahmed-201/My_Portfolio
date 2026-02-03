@@ -33,7 +33,7 @@ function Footer() {
             <div className="email_btn">
               <button
                 type="button"
-                class="btn btn-light rounded-pill fw-bold bg-light "
+                className="btn btn-light rounded-pill fw-bold bg-light "
               >
                 abbasiahmed201@gmail.com
               </button>

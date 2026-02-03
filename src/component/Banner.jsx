@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger plugin
+import profileImage from "../assets/images/edit_profile_image.jpg";
 
 function Banner() {
   const containerRef = useRef();
@@ -105,8 +106,9 @@ function Banner() {
       >
         <div className="w-[45%] md:w-[35%] lg:w-[25%] rounded-2xl overflow-hidden">
           <img
-            src="https://framerusercontent.com/images/NJSwXyDlaUZn0O49iCxLH4yY.png?scale-down-to=1024"
-            alt=""
+            // src="https://framerusercontent.com/images/NJSwXyDlaUZn0O49iCxLH4yY.png?scale-down-to=1024"
+            src={profileImage}
+            alt="Profile Image"
             className="w-full h-auto object-cover"
           />
         </div>

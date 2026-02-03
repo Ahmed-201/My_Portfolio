@@ -2,7 +2,7 @@ import {  useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger plugin
-import profileImage from "../assets/images/edit_profile_image.jpg";
+import profileImage from "../assets/images/edit_profile_image.JPG";
 
 function Banner() {
 

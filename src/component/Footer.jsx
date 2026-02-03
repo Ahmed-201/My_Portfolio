@@ -46,10 +46,10 @@ function Footer() {
               </div>
 
               <div className="project_name">
-                <p>Crosby: POS Tool Launch</p>
-                <p>Crosby: POS Tool Launch</p>
-                <p>Crosby: Scout product launge</p>
-                <p>Crosby: POS Tool Launch</p>
+                <p>Carscrack : Developed website.</p>
+                <p>Universal motors ltd : Maintain website. </p>
+                <p>Practice Project : e-commerce backend with ERD diagram.</p>
+                {/* <p>Crosby: POS Tool Launch</p> */}
               </div>
             </div>
             <div className="social_parent d-flex flex-column gap-2">

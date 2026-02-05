@@ -3,14 +3,14 @@ import Footer from "../component/Footer";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger plugin
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef ,useState} from "react";
 import myWorkImage from "../assets/images/my_work.png";
 import myWorkImage2 from "../assets/images/my_work_um_motors.png";
 import erdImage from "../assets/images/e-commerce-ERD-image.png";
 
 export const About = () => {
+  
   const imagesRef = useRef(); // image wrapper
-
   imagesRef.current = [];
 
   const addToRefs = (el) => {

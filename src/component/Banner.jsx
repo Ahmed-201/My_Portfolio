@@ -89,11 +89,11 @@ function Banner() {
             </div>
 
             <div className="w-full flex justify-center hero-title px-4 mt-2">
-              <div className="flex flex-col md:flex-row gap-0 sm:gap-3 md:gap-5 w-50 justify-between">
-                <p className="text-sm md:text-lg text-white mb-0 text-center">
+              <div className="flex flex-col md:flex-row gap-0 sm:gap-3 md:gap-5 w-[75%] md:w-[50%] justify-between">
+                <p className="text-md md:text-lg text-white mb-0 text-center">
                   DEVELOPING MODERN WEB APPLICATIONS
                 </p>
-                <p className="text-sm md:text-lg text-white mb-0 text-center">
+                <p className="text-md md:text-lg text-white mb-0 text-center">
                   (2024 – PRESENT)
                 </p>
               </div>

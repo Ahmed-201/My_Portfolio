@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { gsap } from "gsap";
 
 function Header() {
+
   const [isTablet, setIsTablet] = useState(false);
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
+  
   useEffect(() => {
     const handleResize = () => {
       setIsTablet(window.innerWidth <= 1024);
@@ -83,12 +82,29 @@ function Header() {
 
           {/* HAMBURGER (TABLET & MOBILE) */}
           {isTablet && (
-            <button
-              className="btn btn-outline-light"
-              onClick={() => setOpen(!open)}
-            >
-              <FontAwesomeIcon icon={faBars} />
-            </button>
+            // <button
+            //   className="btn btn-outline-light"
+            //   onClick={() => setOpen(!open)}
+            // >
+            //   <FontAwesomeIcon icon={faBars} />
+            // </button>
+
+            
+       <button
+      className="relative w-6 h-6 flex items-center justify-center"
+      onClick={() => setOpen(!open)} >
+      {/* Line 1 */}
+      <span
+        className={`absolute block h-0.5 w-6 bg-white  transition-transform duration-300
+        ${open ? "rotate-45" : "translate-y-1"} `}
+      ></span>
+
+      {/* Line 2 */}
+      <span
+        className={`absolute block h-0.5 w-6 bg-white  transition-transform duration-300
+        ${open ? "-rotate-45" : "-translate-y-1"} `}
+      ></span>
+    </button>
           )}
         </div>
 

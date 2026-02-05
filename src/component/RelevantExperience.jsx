@@ -11,70 +11,6 @@ function RelevantExperience() {
 
   return (
     <>
-      {/* <div className="bg_dark text-light">
-      <div className=" experince_main container d-flex flex-column align-items-end ">
-        <div className=" container experience_heading w-full">
-          <h1  style={{lineHeight:"0.4"}}>RELEVANT </h1>
-          <h1 className="" >EXPERIENCE </h1>
-        </div>
-        <div className="d-flex flex-column experinces_main">
-          <div className="experince ">
-            <div className="company mb-4">
-              <h2>Kdys LAB</h2>
-            </div>
-            <div className="time_period d-flex justify-content-between">
-              <h4 className="fw-bold" >FRONTEND DEVELOPER</h4>
-              <h4 className="fw-bold" >(Jan-2024 – Sep-2024)</h4>
-            </div>
-            <div className="designation">
-              <p className="text-[#929292]">
-                Built frontend UI and handled API integrations for dynamic,
-                data-driven applications.{" "}
-              </p>
-            </div>
-          </div>
-
-          <hr />
-
-          <div className="experince ">
-            <div className="company mb-4">
-              <h2>Universal Motors ltd.</h2>
-            </div>
-            <div className="time_period d-flex justify-content-between">
-              <h4 className="fw-bold">FRONTEND DEVELOPER</h4>
-              <h4 className="fw-bold" >(May 2025 – continue)</h4>
-            </div>
-            <div className="designation">
-              <p className="text-[#929292]" >
-                Next.js & TypeScript development, API integration, and bug
-                fixing for the official website.{" "}
-              </p>
-            </div>
-          </div>
-
-          <div className="work_resume_btn_parent btn d-flex p-0 gap-4">
-            <div className="work_resume_btn">
-              <button
-                type="button"
-                class="btn btn-light rounded-pill border border-5 text-light"
-              >
-                VIEW WORK
-              </button>
-            </div>
-            <div className="work_resume_btn">
-              <button
-                type="button"
-                class="btn btn-light rounded-pill border border-5 text-light"
-                onClick={handleViewResume}
-              >
-                RESUME
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> */}
-
       <div className=" text-light py-16">
         <div className="container mx-auto flex flex-col items-end px-4">
           {/* Heading */}
@@ -91,7 +27,7 @@ function RelevantExperience() {
           <div className="flex flex-col items-end w-full gap-12">
             <div>
               {/* Experience 1 */}
-              <div className="flex flex-col gap-4 mb-5">
+              <div className="flex flex-col gap-4">
                 <div className="">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
                     Kdys LAB
@@ -112,7 +48,7 @@ function RelevantExperience() {
               <hr className="border-white-700" />
 
               {/* Experience 2 */}
-              <div className="flex flex-col gap-4 mt-5">
+              <div className="flex flex-col gap-4 ">
                 <div className="">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
                     Universal Motors ltd.

@@ -90,7 +90,7 @@ export const About = () => {
             className="flex justify-center mt-[5rem] lg:mt-[9rem]  px-4  will-change-transform"
           >
             <div
-              className=" relative w-[75%] lg:w-[65%] xl:w-[55%] h-[25vh] lg:h-[55vh] rounded-2xl overflow-hidden transform-gpu cursor-pointer"
+              className=" relative w-[100%] md:w-[75%] lg:w-[65%] xl:w-[55%] h-[25vh] lg:h-[55vh] rounded  md:rounded-2xl overflow-hidden transform-gpu cursor-pointer"
               onClick={(e) => handleViewRepo("first")}
             >
               <img
@@ -118,7 +118,7 @@ export const About = () => {
             className="flex justify-center mt-[5rem] lg:mt-[8rem]  px-4  will-change-transform"
           >
             <div
-              className="relative w-[75%] lg:w-[65%] xl:w-[55%] h-[25vh]  lg:h-[55vh] rounded-2xl overflow-hidden transform-gpu cursor-pointer"
+              className="relative w-[100%] md:w-[75%] lg:w-[65%] xl:w-[55%] h-[25vh]  lg:h-[55vh] rounded  md:rounded-2xl overflow-hidden transform-gpu cursor-pointer"
               onClick={(e) => handleViewRepo("second")}
             >
               <img src={myWorkImage2} alt="" className=" h-full w-full" />
@@ -142,7 +142,7 @@ export const About = () => {
             className="flex justify-center mt-[5rem] lg:mt-[8rem]  px-4  will-change-transform"
           >
             <div
-              className="relative w-[75%] lg:w-[65%] xl:w-[55%] h-[25vh]  lg:h-[55vh] rounded-2xl overflow-hidden transform-gpu cursor-pointer"
+              className="relative w-[100%] md:w-[75%] lg:w-[65%] xl:w-[55%] h-[25vh]  lg:h-[55vh]  rounded md:rounded-2xl overflow-hidden transform-gpu cursor-pointer"
               onClick={(e) => handleViewRepo("third")}
             >
               <img src={erdImage} alt="" className=" h-full w-full" />

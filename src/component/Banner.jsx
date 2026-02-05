@@ -106,7 +106,7 @@ function Banner() {
         ref={imageRef}
         className="flex justify-center mt-[5rem] lg:mt-[11rem]  px-4 w-full mb-5"
       >
-        <div className="w-[45%] md:w-[35%] lg:w-[25%] rounded-2xl overflow-hidden">
+        <div className="w-[65%] lg:w-[25%] rounded-2xl overflow-hidden">
           <img
             // src="https://framerusercontent.com/images/NJSwXyDlaUZn0O49iCxLH4yY.png?scale-down-to=1024"
             src={profileImage}

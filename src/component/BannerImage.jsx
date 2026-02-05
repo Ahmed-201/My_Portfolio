@@ -8,7 +8,7 @@ function BannerImage() {
        
         className="flex justify-center mt-[11rem] px-4 w-full"
       >
-        <div className="w-[45%] md:w-[35%] lg:w-[25%]  rounded-2xl overflow-hidden">
+        <div className="w-[65%] lg:w-[25%] lg:w-[25%]  rounded-2xl overflow-hidden">
           <img
            
             className="w-full h-auto object-cover"

@@ -212,8 +212,8 @@ html,body{
 /* .social_links p {
   margin-bottom: none ;
 } */
-.projects_parent p {
-  margin-bottom: 0px;
+.projects_parent p{
+  margin-bottom: 5px;
 }
 .social_parent p {
   margin-bottom: 0px;
@@ -223,13 +223,7 @@ html,body{
   font-weight: 600;
   color: rgb(153, 153, 153);
 }
-/* .avatar_img img {
-  width: -webkit-fill-available;
-} */
-/* .bg_dark{
 
-  background-color: green !important;
-} */
 .main_footer {
   background-color: black !important;
 }
@@ -247,6 +241,11 @@ html,body{
   font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
   font-weight: 600;
   color: white;
+}
+
+.project_name span{
+
+  text-decoration: underline;
 }
 .avatar {
   font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;

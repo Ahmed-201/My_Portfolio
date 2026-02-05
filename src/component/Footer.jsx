@@ -9,7 +9,7 @@ import avatar from "../assets/images/avatar_image.png";
 function Footer() {
   return (
     <div className="container-fluid main_footer">
-      <div className="container flex justify-center flex-col-reverse lg:flex-row gap-[120px]  ">
+      <div className="container flex justify-center flex-col-reverse lg:flex-row  gap-[40px] lg:gap-[120px]  ">
         <div className="avatar">
           <div className="name ">
             <h2 className="text-center md:text-left" >MUHAMMAD AHMED</h2>
@@ -18,13 +18,13 @@ function Footer() {
               interfaces at universal motors ltd.
             </p>
           </div>
-          <div className="avatar_img">
+          <div className="avatar_img flex justify-center">
             <img src={avatar} alt="" />
           </div>
         </div>
-        <div className="lets_connect d-flex flex-column  ">
+        <div className=" d-flex flex-column  ">
           <div className="email_content d-flex flex-column">
-            <div className="caption  w-1/2 sm:w-full ">
+            <div className="caption   sm:w-full ">
               <h4 className="font-[Inter\ Tight] font-semibold text-white text-2xl sm:text-xl">
                 Think I’d be a good fit for your team or project? Let’s connect.
               </h4>
@@ -39,20 +39,20 @@ function Footer() {
               </button>
             </div>
           </div>
-          <div className="projects_social gap-5">
-            <div className="projects_parent d-flex flex-column gap-4">
+          <div className="projects_social pt-5 gap-3">
+            <div className="projects_parent d-flex flex-column gap-2 mb-4">
               <div className="heading">
                 <p>SELECTED PROJECTS</p>
               </div>
 
-              <div className="project_name">
-                <p>Carscrack : Developed website.</p>
-                <p>Universal motors ltd : Maintain website. </p>
-                <p>Practice Project : e-commerce backend with ERD diagram.</p>
+              <div className="project_name  ">
+                <p><span>Carscrack : </span>  Developed website.</p>
+                <p><span>Universal motors ltd : </span> Maintain website. </p>
+                <p className="break-words" ><span>Practice Project : </span> E-Commerce backend with ERD diagram.</p>
                 {/* <p>Crosby: POS Tool Launch</p> */}
               </div>
             </div>
-            <div className="social_parent d-flex flex-column gap-2">
+            <div className="social_parent d-flex flex-column gap-2 ">
               <div className="heading">
                 <p>SOCIALS</p>
               </div>

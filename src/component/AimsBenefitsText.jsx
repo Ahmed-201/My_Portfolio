@@ -29,7 +29,7 @@ function AimsBenefitsText({ text, animation }) {
     <div className="bg_dark text-light">
       <div className="container w-full d-flex justify-content-center  ">
         {animation === true ? (
-          <div className="container py-5 w-75" ref={textParentRef}>
+          <div className="container py-5 " ref={textParentRef}>
             <h2
               ref={textRef}
               className="
@@ -48,13 +48,13 @@ function AimsBenefitsText({ text, animation }) {
             className=""
           >
             <h2
-              className='className="
+              className="
     font-intertight font-semibold text-[32px] leading-[38px] 
     sm:text-[40px] sm:leading-[45px] 
     md:text-[52px] md:leading-[58px] 
     lg:text-[64px] lg:leading-[65px] 
     tracking-[-0.02em] text-center  mt-[100px]
-  "'
+  "
             >
               {text}
             </h2>

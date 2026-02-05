@@ -11,7 +11,7 @@ function MyTried() {
                 <h2 className='text-2xl md:text-4xl lg:text-5xl'>My Proven Web Development Process</h2>
             </div>
 
-            <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-4 px-4">
+            <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-y-4  md:gap-y-16 gap-x-4 px-4">
 
               
                     <div className="">

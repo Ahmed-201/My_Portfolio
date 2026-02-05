@@ -224,10 +224,7 @@ width: 300px;
       }
    
 
-      .busy_in{
-
-        max-width: 280px;
-      }
+     
       .avatar_img img{
 
         width: 270px;
@@ -265,12 +262,11 @@ width: 300px;
 
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 275px) and (max-width: 768px) {
 
     .avatar {
     display: flex;
     flex-direction: column;
-   
     align-self: center;
     /* gap: 1.5rem;
     width:100%; */
